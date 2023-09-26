@@ -19,18 +19,22 @@ The daemon portion of the Nintendo GameCube tunneling software, written in C.
 
 ### Getting Started - Hardware
 
-	To use WarpPipe the following is needed. 1) a GCN with a broadband
-adapter. 2) a i386 machine running some flavor of linux and root access. 3) a
-connection to the internet.
+	To use WarpPipe the following is needed:
+ 
+ 	1) a GCN with a broadband adapter. 
+  	2) a i386 machine running some flavor of linux and root access. 
+   	3) a connection to the internet.
 
-Network setup:
+	Network setup:
+ 
 	1) Make sure your GCN and Linux machine can access the internet. The
 		GCN only needs to be visible to the Linuc Machine.
 	2) If your Linux machine is behind a router/firewall then you need to
 	     direct port 4000 for both UPD and TCP to the Linux machine.
 	3) That should be it.
 
-Running the Software:
+	Running the Software:
+ 
 	1) You need root access to the linux machine.
 	2) The software runs as both a server and client. One person acts as
 	     server and simply runs the deamon, the second connects to the
