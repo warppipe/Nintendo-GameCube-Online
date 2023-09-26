@@ -1,0 +1,34 @@
+// ----------------------------------------------------------------------------------------------------
+// TODO list.
+//
+// Here is a TODO list of what needs to be done. I'm tossing the code up on CVS so atleast it's there.
+// If you complete a todo, or anything for that matter, add an entry to the changes log with the date,
+// your name, and the basics of what you did. And obviously remove it from here.
+// ----------------------------------------------------------------------------------------------------
+
+
+* A makefile needs to be made so make can be used.
+
+* Cubes need to be on the same subnet. This is not a problem. Instead of using the cubes full local IP,
+   we'll just use the last byte. Then when a proxy handles that cubes local ip it just prefix's the
+   local subnet.
+
+* Need to convert raw packet capturing over to libpcap. This will make it much more cross platform
+   friendly.
+
+* Various bits of cleanup need to be done.
+
+* RLE compression needs to be written.
+
+* Speed is still slow. Gonna need to look into some options that may help speed the game. Since data packets
+   are controller input we can't fake them reliably. However, faking one or two, since a packet is sent every
+   60th of a second probably won't hurt things that much. An adaptive scheme that measures the time between real
+   packets then divides that by a time step to create the number of fake packets trying not to go over a limit.
+   Then if bursts of latency are hit it will kick up, while low latency it will lessen to almost non-existant.
+
+* Some modularization probably needs to be done. I worte the code entirely in one source file, but as the source
+   gets larger it really should be broken up.
+
+* I wrote the code in c, as that seems to be the linux thing, but i'm thinking of moving up to c++. Atleast in
+   the regard of using classes. I like classes. Most of the other c++ features can chew ass.
+
