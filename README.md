@@ -1,5 +1,5 @@
 # Nintendo GameCube Online
-The daemon portion of the Nintendo GameCube tunneling software, written in C.
+An early version of the daemon portion of the Nintendo GameCube tunneling software, written in C.
 
 ## Warp Pipe V1.0
 
